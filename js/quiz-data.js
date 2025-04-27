@@ -216,7 +216,7 @@ const quizData = {
           "Go away na",
           "Sleep na lang",
           "Eat na lang ngani",
-          "Touch myself lang"
+          "Touch myself"
         ],
         "correctAnswer": 3,
         "hint": "This message became a popular meme for its unexpected and humorous nature.",
