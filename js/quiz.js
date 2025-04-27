@@ -141,14 +141,13 @@ function setupEventListeners() {
     });
   }
 }
-let timerSound = new Audio('../assets/audios/timer.mp3');
-
 function startTimer() {
     timeLeft = 10;
     document.getElementById('timer').textContent = formatTime(timeLeft);
-  
-    // Reset and play the sound
-    timerSound.currentTime = 0;  // Rewind to the start of the audio
+    //create an an element that will play a timer sound in each question
+    //why is is double playing the sound in the first instance?
+    const timerSound = document.createElement('audio');
+    timerSound.src = '../assets/audios/timer.mp3';
     timerSound.play();
 
     //remove the sound after 10 seconds and when the next buttion is clicked
